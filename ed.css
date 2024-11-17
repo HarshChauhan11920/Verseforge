@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle, rgb(88, 64, 131) 0%, rgba(5, 0, 19, 1) 100%);
+  color: #ffffff;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  height: 750px;
+  background-color: #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  background-color: darkorchid;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #282c34;
+  width: 100%;
+}
+
+.sidebar button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.editor-container {
+  flex: 1;
+  max-width: 10000px;
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: palevioletred;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.toolbar button, .toolbar input[type="color"] {
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: darkorchid;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.toolbar input[type="color"] {
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.toolbar button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.editor-area {
+  min-height: 500px;
+  padding: 15px;
+  background: radial-gradient(circle, rgb(88, 64, 131) 0%, rgba(5, 0, 19, 1) 100%);
+  color: #ffffff;
+  border-radius: 4px;
+  overflow-y: auto;
+  font-size: 16px;
+  position: relative;
+}
+
+/* Watermark styling */
+.editor-area::before {
+  content: "";
+  background-image: url('images/Screenshot\ \(35\).png'); /* Replace with your watermark image path */
+  background-size: 20%; /* Adjust watermark size */
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50p;
+  opacity: 0.5; /* Light opacity to blend into background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.editor-area p {
+  margin: 5px 0;
+  position: relative;
+  z-index: 1;
+}

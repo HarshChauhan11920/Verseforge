@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VerseForge | LyricEditor</title>
+  <link rel="stylesheet" href="ed.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <link rel="icon" href="images/Screenshot (35).png">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>N A V . B A R</h2>
+  <button onclick="window.location.href='index.html'">To Home</button>
+  <button onclick="window.location.href='lgp.html'">To LyricForge</button>
+  <button onclick="downloadPDF()">Download as PDF</button>
+</div>
+
+<div class="editor-container">
+  <header>
+    <h1>LyricEditor</h1>
+  </header>
+  
+  <div class="toolbar">
+    <button onclick="formatText('bold')">Bold</button>
+    <button onclick="formatText('italic')">Italic</button>
+    <button onclick="formatText('underline')">Underline</button>
+    <button onclick="alignText('left')">Align Left</button>
+    <button onclick="alignText('center')">Center</button>
+    <button onclick="alignText('right')">Align Right</button>
+    <input type="color" id="fontColorPicker" title="Change Font Color" onchange="changeFontColor(this.value)">
+  </div>
+
+  <div id="editor" contenteditable="true" class="editor-area">
+    <!-- Example lyrics to edit -->
+    <p>Type your lyrics here...</p>
+  </div>
+
+</div>
+
+<script src="ed.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerseForge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/Screenshot (35).png">
+</head>
+<body>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="images/Screenshot (35).png" alt="Logo" class="logo-image">
+                </a>
+            </div>
+            <div class="logo" style="    font-size: 3rem; color: #fff; text-align: center; padding-top: 25px; border: white 5px; border-radius: 100px 0px 100px 0px; border-style: solid double; border-color: #ffa0a0 rgb(81, 14, 236) ;
+        "><span style="color: darkorchid;">V e r s e</span> F o r g e</div>
+            <ul class="nav-links">
+                <li><button onclick="window.location.href='index.html'">Home</button></li>
+                <li><button onclick="window.location.href='lgp.html'">LyricForge</button></li>
+                <li><button onclick="window.location.href='ed.html'">LyricEditor</button></li>
+                <li><button onclick="window.location.href='abt.html'">AboutUs</button></li>
+            </ul>
+          </nav>
+
+
+    <!-- banner section -->
+    <section class="banner">
+      <div class="banner-video">
+        <video autoplay loop muted >
+          <source src="vid/Benson Boone - Beautiful Things (Official Music Video) - Benson Boone (1080p, h264, youtube)-VEED.mp4">
+        </video>
+      </div>
+      <div class="banner-text">
+        <h1 class="fd">"Create something different"</h1>
+        <p class="fd">
+          "Empowering Your Musical Journey with AI-Driven Creativiy and Guidance"</p>
+      </div>
+    </section>
+
+    <section class="info">
+        <h2>How does it works?</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/download.png" alt="img 1">
+                <p>The user enters a prompt or theme in the designated input area, providing context for the lyrics they want to create.</p>
+            </div>
+            <div class="card">
+                <img src="images/download (1).png" alt="img 2">
+                <p>Upon clicking the "Generate" button, the app captures the input and triggers an API request to the On-Demand IO service.</p>
+            </div>
+            <div class="card">
+                <img src="images/download (2).png" alt="img 3">
+                <p>The On-Demand IO API processes the request using its AI algorithms, analyzing the prompt to generate relevant lyrics.</p>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="cards">
+            <div class="card">
+                <img src="images/download (3).png" alt="img 4">
+                <p>Once the lyrics are generated, the API sends the response back to the web app.</p>
+            </div>
+            <div class="card">
+                <img src="images/images.png" alt="img 5">
+                <p>The generated lyrics are displayed in the designated area of the app for the user to review.</p>
+            </div>
+            <div class="card">
+                <img src="images/download (4).png" alt="img 6" >
+                <p>The user can edit the displayed lyrics as needed and save or download them for future use.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Explore Our Features</h2>
+        <div class="feature-cards">
+            <div class="feature-card1">
+                <h3>LyricForge</h3>
+                <p>Generate high quality lyrics through AI powered chatbot.</p>
+                <br>
+                <a href="lgp.html" class="btn">Try Now</a>
+            </div>
+            <div class="feature-card2">
+                <h3>LyricEditor</h3>
+                <p>Edit or create lyrics anywhere and everywhere.</p>
+                <br> <br>
+                <a href="ed.html" class="btn">Try Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>The VerseForge Web App is a user-friendly platform designed to assist musicians, songwriters, and enthusiasts in creating song lyrics with ease and flexibility.</p>
+        <button style="width: 100px; font-size: medium;" onclick="window.location.href='abt.html'">Learn More</button>
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact-section">
+      <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>We would love to hear from you. Please fill out the form to get in touch with us and share your feedback or inquiries.</p>
+      </div>
+      <form id="contactForm">
+          <div id="error" class="error"></div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+
+          <label for="suggestion">Suggestion:</label>
+          <textarea id="suggestion" name="suggestion" placeholder="Enter your suggestion"></textarea>
+
+          <button type="button" onclick="validateForm()">Submit</button>
+      </form>
+  </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p>&copy; 2024 CSE326 Project. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

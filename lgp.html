@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerseForge | LyricForge</title>
+    <link rel="stylesheet" href="lgp.css">
+    <link rel="icon" href="images/Screenshot (35).png">
+</head>
+<body>
+    <div class="navbar">
+        <h2>N A V . B A R</h2>
+        <button onclick="window.location.href='index.html'">To Home</button>
+        <button onclick="window.location.href='ed.html'">To LyricEditor</button>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">LyricForge</div>
+        <div id="chat-box" class="chat-box">
+            <!-- Chat messages will be appended here -->
+        </div>
+        <div class="input-container">
+            <textarea id="chat-input" rows="1" placeholder="Type your message..."></textarea>
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <button id="edit-btn">Edit in Editor</button>
+    <script src="lgp.js"></script>
+</body>
+</html>
